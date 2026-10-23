@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B2B Case Studies | Global Network & Region Selector</title>
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style> body { font-family: 'Inter', sans-serif; } </style>
 
-  <!-- Google Analytics 4 & Clarity -->
+  <!-- PWA META TAGS & MANIFEST -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#10b981">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Casos B2B">
+
+  <!-- SERVICE WORKER PWA REGISTRATION -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((reg) => console.log('PWA Service Worker registrado con éxito:', reg.scope))
+          .catch((err) => console.log('Error al registrar Service Worker PWA:', err));
+      });
+    }
+  </script>
+
+  <!-- GOOGLE ANALYTICS 4 & CLARITY (Reemplazar IDs) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "TU_CLARITY_ID");
   </script>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between">
@@ -30,7 +60,7 @@
       </div>
       <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-slate-400">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        Global Gateway
+        Global Gateway PWA
       </div>
     </div>
   </header>
@@ -179,220 +209,7 @@
 
   <!-- Footer Minimalista -->
   <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    <p>© 2026 B2B Case Studies Platform. Multi-Market Architecture.</p>
-  </footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B2B Case Studies | Global Network & Region Selector</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style> body { font-family: 'Inter', sans-serif; } </style>
-
-  <!-- Google Analytics 4 & Clarity (Reemplazar IDs) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  <!-- Redirección Inteligente por Idioma/Región -->
-  <script>
-    (function() {
-      const savedLang = localStorage.getItem('user_lang_preference');
-      if (savedLang) {
-        if (savedLang === 'en-us') window.location.href = '/en-us/';
-        else if (savedLang === 'en-gb') window.location.href = '/en-gb/';
-        else if (savedLang === 'es') window.location.href = '/es/';
-        else if (savedLang === 'fr') window.location.href = '/fr/';
-        else if (savedLang === 'de') window.location.href = '/de/';
-        else if (savedLang === 'pt') window.location.href = '/pt/';
-        return;
-      }
-
-      const browserLang = navigator.language || navigator.userLanguage;
-      if (browserLang.startsWith('es')) {
-        localStorage.setItem('user_lang_preference', 'es');
-        window.location.href = '/es/';
-      } else if (browserLang === 'en-GB') {
-        localStorage.setItem('user_lang_preference', 'en-gb');
-        window.location.href = '/en-gb/';
-      } else if (browserLang.startsWith('en')) {
-        localStorage.setItem('user_lang_preference', 'en-us');
-        window.location.href = '/en-us/';
-      }
-    })();
-  </script>
-</head>
-<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between">
-
-  <!-- Header Superior -->
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur py-4">
-    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <span class="bg-emerald-500 text-slate-950 font-extrabold w-8 h-8 flex items-center justify-center rounded-lg text-lg shadow-lg shadow-emerald-500/20">C</span>
-        <span class="font-bold text-xl tracking-tight text-white">B2B Case Studies</span>
-      </div>
-      <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-slate-400">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        Global Gateway
-      </div>
-    </div>
-  </header>
-
-  <!-- Contenido Principal / Botonera Global -->
-  <main class="max-w-6xl mx-auto px-4 py-12 w-full">
-    
-    <div class="text-center max-w-2xl mx-auto mb-10">
-      <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-3">
-        Selecciona tu Mercado
-      </h1>
-      <p class="text-slate-400 text-sm md:text-base">
-        Accede a casos de estudio B2B adaptados al discurso comercial, moneda y gobernanza de cada región.
-      </p>
-    </div>
-
-    <!-- BOTONERA PRINCIPAL: MERCADOS DESTACADOS / ACTIVOS -->
-    <div class="mb-12">
-      <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-4 px-1">Mercados Activos & Optimizado</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        
-        <!-- Botón 1: US -->
-        <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900 border border-emerald-500/40 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02] shadow-lg hover:shadow-emerald-500/10">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl">🇺🇸</span>
-            <div>
-              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">United States</div>
-              <div class="text-xs text-slate-400">Direct ROI & Acceleration ($ USD)</div>
-            </div>
-          </div>
-          <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
-        </a>
-
-        <!-- Botón 2: UK -->
-        <a href="/en-gb/" onclick="localStorage.setItem('user_lang_preference', 'en-gb')" class="bg-slate-900 border border-emerald-500/40 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02] shadow-lg hover:shadow-emerald-500/10">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl">🇬🇧</span>
-            <div>
-              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">United Kingdom</div>
-              <div class="text-xs text-slate-400">Governance & Risk Mitigation (£ GBP)</div>
-            </div>
-          </div>
-          <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
-        </a>
-
-        <!-- Botón 3: ES / LATAM -->
-        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900 border border-emerald-500/40 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02] shadow-lg hover:shadow-emerald-500/10">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl">🇪🇸</span>
-            <div>
-              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">España / LATAM</div>
-              <div class="text-xs text-slate-400">Confianza e Impacto Institucional (€ / $)</div>
-            </div>
-          </div>
-          <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
-        </a>
-
-        <!-- Botón 4: Francia -->
-        <a href="/fr/" onclick="localStorage.setItem('user_lang_preference', 'fr')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02]">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl">🇫🇷</span>
-            <div>
-              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">France</div>
-              <div class="text-xs text-slate-400">Rigueur & Souveraineté (€ EUR)</div>
-            </div>
-          </div>
-          <span class="text-slate-500 group-hover:text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
-        </a>
-
-        <!-- Botón 5: Alemania -->
-        <a href="/de/" onclick="localStorage.setItem('user_lang_preference', 'de')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02]">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl">🇩🇪</span>
-            <div>
-              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">Deutschland</div>
-              <div class="text-xs text-slate-400">Präzision & Datenschutz (€ EUR)</div>
-            </div>
-          </div>
-          <span class="text-slate-500 group-hover:text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
-        </a>
-
-        <!-- Botón 6: Brasil -->
-        <a href="/pt/" onclick="localStorage.setItem('user_lang_preference', 'pt')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02]">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl">🇧🇷</span>
-            <div>
-              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">Brasil</div>
-              <div class="text-xs text-slate-400">Agilidade & Escala (R$ BRL)</div>
-            </div>
-          </div>
-          <span class="text-slate-500 group-hover:text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
-        </a>
-
-      </div>
-    </div>
-
-    <!-- BOTONERA SECUNDARIA: RED GLOBAL -->
-    <div>
-      <h2 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4 px-1">Red Global Adicional</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        
-        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
-          <span class="text-xl">🇲🇽</span>
-          <span class="text-xs font-medium text-slate-300">México</span>
-        </a>
-
-        <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
-          <span class="text-xl">🇨🇦</span>
-          <span class="text-xs font-medium text-slate-300">Canada</span>
-        </a>
-
-        <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
-          <span class="text-xl">🇦🇺</span>
-          <span class="text-xs font-medium text-slate-300">Australia</span>
-        </a>
-
-        <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
-          <span class="text-xl">🇮🇳</span>
-          <span class="text-xs font-medium text-slate-300">India</span>
-        </a>
-
-        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
-          <span class="text-xl">🇦🇷</span>
-          <span class="text-xs font-medium text-slate-300">Argentina</span>
-        </a>
-
-        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
-          <span class="text-xl">🇨🇱</span>
-          <span class="text-xs font-medium text-slate-300">Chile</span>
-        </a>
-
-        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
-          <span class="text-xl">🇨🇴</span>
-          <span class="text-xs font-medium text-slate-300">Colombia</span>
-        </a>
-
-        <a href="/en-gb/" onclick="localStorage.setItem('user_lang_preference', 'en-gb')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
-          <span class="text-xl">🇮🇪</span>
-          <span class="text-xs font-medium text-slate-300">Ireland</span>
-        </a>
-
-      </div>
-    </div>
-
-  </main>
-
-  <!-- Footer Minimalista -->
-  <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    <p>© 2026 B2B Case Studies Platform. Multi-Market Architecture.</p>
+    <p>© 2026 B2B Case Studies Platform. Multi-Market PWA Architecture.</p>
   </footer>
 
 </body>
