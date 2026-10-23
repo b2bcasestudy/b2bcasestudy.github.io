@@ -12,10 +12,14 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased">
 
+  <!-- HEADER UNIVERSAL -->
   <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="/en-us/industry/saas/" class="text-xs text-slate-400 hover:text-emerald-400 transition">← Back to SaaS Case Studies</a>
-      <span class="text-xs bg-slate-900 border border-slate-800 text-emerald-400 px-3 py-1 rounded-full">SaaS Case Study #01</span>
+      <div class="flex items-center gap-2">
+        <span class="bg-emerald-500 text-slate-950 font-bold w-6 h-6 flex items-center justify-center rounded text-sm">C</span>
+        <a href="/en-us/" class="font-semibold text-white hover:text-emerald-400 transition">B2B Case Studies</a>
+      </div>
+      <a href="/en-us/industry/saas/" class="text-sm text-slate-400 hover:text-emerald-400 transition">← Back to SaaS Hub</a>
     </div>
   </header>
 
@@ -27,39 +31,16 @@
       <p class="text-slate-400 text-lg">By deploying customer-verified ROI metrics during security evaluation phases, Northwind eliminated sales friction and accelerated enterprise approvals.</p>
     </div>
 
-    <!-- Key Metrics Highlight -->
-    <div class="grid grid-cols-3 gap-4 bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-12 text-center">
-      <div>
-        <div class="text-3xl font-extrabold text-emerald-400">-27</div>
-        <div class="text-xs text-slate-400 mt-1">Days in Sales Cycle</div>
-      </div>
-      <div>
-        <div class="text-3xl font-extrabold text-emerald-400">+38%</div>
-        <div class="text-xs text-slate-400 mt-1">Demo-to-Close Rate</div>
-      </div>
-      <div>
-        <div class="text-3xl font-extrabold text-emerald-400">$1.2M</div>
-        <div class="text-xs text-slate-400 mt-1">Added Pipeline</div>
-      </div>
-    </div>
-
     <!-- Article Content -->
-    <article class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-relaxed">
+    <article class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-relaxed mb-16">
       <div>
         <h2 class="text-2xl font-bold text-white mb-3">The Challenge</h2>
         <p>Northwind Analytics was closing $50k+ annual contracts with Fortune 500 prospects, but deal flow consistently stalled during late-stage procurement. Security teams and CFOs demanded real-world operational proof before signing off.</p>
       </div>
-
       <div>
         <h2 class="text-2xl font-bold text-white mb-3">The Solution</h2>
         <p>We conducted deep-dive interviews with 5 of Northwind’s cornerstone enterprise clients, extracting hard metrics around data processing speed and compliance savings. We structured these insights into executive one-pagers designed specifically for procurement review decks.</p>
       </div>
-
-      <blockquote class="bg-slate-900 border-l-4 border-emerald-500 p-6 rounded-r-xl italic text-slate-200">
-        "Having independently verified customer ROI transformed our sales collateral. It gave our AEs the exact firepower needed to clear CFO evaluation in days instead of weeks."
-        <span class="block not-italic text-xs text-emerald-400 font-semibold mt-3">— Laura Méndez, VP of Sales Ops @ Northwind</span>
-      </blockquote>
-
       <div>
         <h2 class="text-2xl font-bold text-white mb-3">The Results</h2>
         <ul class="list-disc pl-6 space-y-2 text-slate-300">
@@ -69,10 +50,33 @@
         </ul>
       </div>
     </article>
-  </main>
 
-  <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-    <p>© 2026 B2B Case Studies. All rights reserved.</p>
-  </footer>
+    <!-- BLOQUE READ NEXT (INTERCONEXIÓN) -->
+    <section class="border-t border-slate-800 pt-12 mb-12">
+      <h3 class="text-2xl font-bold text-white mb-6">Read Next: More SaaS Case Studies</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Enlace a Caso 2 -->
+        <a href="/en-us/industry/saas/cloudscale-churn-reduction/" class="bg-slate-900 border border-slate-800 p-6 rounded-xl block hover:border-emerald-500/50 transition">
+          <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Case 02</span>
+          <h4 class="text-lg font-bold text-white mt-3 mb-2">CloudScale Infrastructure</h4>
+          <p class="text-xs text-slate-400">Reduced gross customer churn by 42% and increased NRR to 118%.</p>
+        </a>
+        <!-- Enlace a Caso 3 -->
+        <a href="/en-us/industry/saas/devpulse-arr-growth/" class="bg-slate-900 border border-slate-800 p-6 rounded-xl block hover:border-emerald-500/50 transition">
+          <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Case 03</span>
+          <h4 class="text-lg font-bold text-white mt-3 mb-2">DevPulse Platform</h4>
+          <p class="text-xs text-slate-400">Scaled ARR 4x from $2M to $8M by targeting enterprise engineering buyers.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA FINAL PARA EVITAR CALLEJÓN SIN SALIDA -->
+    <section class="text-center bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-8">
+      <h3 class="text-xl font-bold text-white mb-3">Ready to close deals faster?</h3>
+      <p class="text-sm text-slate-400 mb-6">Let us interview your best clients and turn them into your strongest sales asset.</p>
+      <a href="/en-us/#contact" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-lg transition">Request a Quote</a>
+    </section>
+
+  </main>
 </body>
 </html>
