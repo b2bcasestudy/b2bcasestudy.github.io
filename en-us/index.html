@@ -72,11 +72,11 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="/en-us/industry/saas/" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-lg text-center transition">Browse SaaS Industry Hub</a>
-          <a href="#featured-cases" class="border border-slate-700 hover:bg-slate-900 text-slate-300 font-semibold px-6 py-3 rounded-lg text-center transition">View All 3 SaaS Cases</a>
+          <a href="#contact" class="border border-slate-700 hover:bg-slate-900 text-slate-300 font-semibold px-6 py-3 rounded-lg text-center transition">Request Quote</a>
         </div>
       </div>
 
-      <!-- Hero Card linking to Case Study 1 -->
+      <!-- Hero Card -->
       <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl">
         <div class="flex justify-between items-center mb-4 text-xs text-slate-400">
           <span class="bg-slate-800 text-slate-300 px-2 py-1 rounded">Featured Case Study</span>
@@ -114,7 +114,6 @@
           <a href="/en-us/industry/saas/" class="text-sm font-semibold text-emerald-400 hover:underline">Go to SaaS Hub Page →</a>
         </div>
 
-        <!-- Cards linking directly to individual cases -->
         <div class="grid md:grid-cols-3 gap-6">
           <div class="bg-slate-950 border border-slate-800 p-6 rounded-xl flex flex-col justify-between hover:border-emerald-500/50 transition">
             <div>
@@ -146,26 +145,40 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Formulario de Contacto Funcional -->
     <section id="contact" class="py-20 max-w-xl mx-auto px-4">
-      <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
+      <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-2xl">
         <h3 class="text-2xl font-bold text-white mb-2 text-center">Get Your B2B Case Study</h3>
         <p class="text-slate-400 text-sm mb-6 text-center">Tell us about your product and target accounts for a custom quote.</p>
-        <form class="space-y-4" action="#" method="POST">
+        
+        <form action="https://formsubmit.co/alancastrobello@gmail.com" method="POST" class="space-y-4">
+          <input type="hidden" name="_subject" value="New B2B Case Study Inquiry - US Market">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://b2bcasestudy.github.io/en-us/">
+
           <div>
             <label class="block text-xs font-medium text-slate-300 mb-1">Full Name</label>
-            <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+            <input type="text" name="Name" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
           </div>
+
           <div>
             <label class="block text-xs font-medium text-slate-300 mb-1">Work Email</label>
-            <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+            <input type="email" name="Work Email" required placeholder="john@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
           </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Company Name</label>
+            <input type="text" name="Company" placeholder="Acme Corp" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+          </div>
+
           <div>
             <label class="block text-xs font-medium text-slate-300 mb-1">Project Details</label>
-            <textarea rows="4" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500"></textarea>
+            <textarea name="Project Details" rows="4" required placeholder="Describe your product, target customer persona, and current sales goals..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500"></textarea>
           </div>
+
           <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg transition text-sm">
-            Request Quote
+            Request Quote →
           </button>
         </form>
       </div>
