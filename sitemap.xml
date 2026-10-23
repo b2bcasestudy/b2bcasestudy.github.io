@@ -2,30 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <!-- Portada Principal (Español Global) -->
+  <!-- Español (Global) -->
   <url>
     <loc>https://b2bcasestudy.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
     <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://b2bcasestudy.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://b2bcasestudy.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://b2bcasestudy.github.io/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
 
-  <!-- Versión Estados Unidos -->
+  <!-- Estados Unidos -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-us/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
     <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://b2bcasestudy.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://b2bcasestudy.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://b2bcasestudy.github.io/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
 
-  <!-- Versión Reino Unido -->
+  <!-- Reino Unido -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-gb/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
     <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://b2bcasestudy.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://b2bcasestudy.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://b2bcasestudy.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
+  </url>
+
+  <!-- Francés -->
+  <url>
+    <loc>https://b2bcasestudy.github.io/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://b2bcasestudy.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://b2bcasestudy.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://b2bcasestudy.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
+  </url>
+
+  <!-- Alemán -->
+  <url>
+    <loc>https://b2bcasestudy.github.io/de/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://b2bcasestudy.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://b2bcasestudy.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://b2bcasestudy.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
+  </url>
+
+  <!-- Portugués -->
+  <url>
+    <loc>https://b2bcasestudy.github.io/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://b2bcasestudy.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://b2bcasestudy.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://b2bcasestudy.github.io/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
 
