@@ -12,42 +12,35 @@
     body { font-family: 'Inter', sans-serif; }
   </style>
 
-  <!-- 1. ETIQUETAS SEO (Van justo antes de cerrar el </head>) -->
+  <!-- ETIQUETAS SEO MULTILINGÜE -->
   <link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/" />
   <link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/" />
   <link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/" />
   <link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/" />
 
+  <!-- SCRIPT DE REDIRECCIÓN AUTOMÁTICA POR IDIOMA -->
   <script>
-  (function () {
-    // 1. Evitar bucles: Verificar si el usuario ya eligió un idioma manualmente
-    const userPreference = localStorage.getItem('user_lang_preference');
-    
-    // Si ya seleccionó manualmente permanecer o cambiar, respetamos su decisión
-    if (userPreference) return;
+    (function () {
+      const userPreference = localStorage.getItem('user_lang_preference');
+      if (userPreference) return;
 
-    // 2. Obtener el idioma del navegador del visitante
-    const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    const currentPath = window.location.pathname;
+      const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      const currentPath = window.location.pathname;
 
-    // 3. Ejecutar redirección solo si el usuario está en la página principal raíz
-    if (currentPath === '/' || currentPath === '/index.html') {
-      if (browserLang.includes('en-gb') || browserLang.includes('en-uk') || browserLang.includes('en-ie')) {
-        // Redirigir a Reino Unido / Europa
-        window.location.href = '/en-gb/';
-      } else if (browserLang.startsWith('en')) {
-        // Redirigir a Estados Unidos / Mercado global en inglés
-        window.location.href = '/en-us/';
+      if (currentPath === '/' || currentPath === '/index.html') {
+        if (browserLang.includes('en-gb') || browserLang.includes('en-uk') || browserLang.includes('en-ie')) {
+          window.location.href = '/en-gb/';
+        } else if (browserLang.startsWith('en')) {
+          window.location.href = '/en-us/';
+        }
       }
-      // Si el navegador está en español (es) o cualquier otro idioma, permanece en la raíz /
-    }
-  })();
-</script>
+    })();
+  </script>
 </head>
 
 <body class="bg-slate-950 text-slate-100 antialiased">
 
-  <!-- 2. HEADER CON NAVEGACIÓN Y SELECTOR DE IDIOMA (Va al principio del <body>) -->
+  <!-- HEADER CON MENÚ DESPLEGABLE CON MEMORIA -->
   <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
       <div class="flex items-center gap-2">
@@ -62,7 +55,7 @@
       </nav>
 
       <div class="flex items-center gap-3">
-        <!-- Selector Desplegable de Idioma -->
+        <!-- Selector Desplegable -->
         <div class="relative group">
           <button class="flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-300 hover:text-white px-3 py-1.5 rounded-lg text-sm font-medium transition">
             <span>🌐 Idioma</span>
@@ -70,13 +63,13 @@
           </button>
           
           <div class="absolute right-0 mt-2 w-52 bg-slate-900 border border-slate-800 rounded-xl shadow-2xl py-2 hidden group-hover:block z-50">
-            <a href="/" class="flex items-center gap-2 px-4 py-2 text-sm text-emerald-400 font-semibold bg-slate-800/50">
+            <a href="/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="flex items-center gap-2 px-4 py-2 text-sm text-emerald-400 font-semibold bg-slate-800/50">
               <span>🇪🇸</span> Español (Global)
             </a>
-            <a href="/en-us/" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-emerald-400 transition">
+            <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-emerald-400 transition">
               <span>🇺🇸</span> English (US - $)
             </a>
-            <a href="/en-gb/" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-emerald-400 transition">
+            <a href="/en-gb/" onclick="localStorage.setItem('user_lang_preference', 'en-gb')" class="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-emerald-400 transition">
               <span>🇬🇧</span> English (UK - £)
             </a>
           </div>
@@ -180,7 +173,7 @@
       </div>
     </section>
 
-    <!-- Formulario -->
+    <!-- Formulario de Contacto -->
     <section id="contacto" class="py-20 max-w-xl mx-auto px-4">
       <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
         <h3 class="text-2xl font-bold text-white mb-2 text-center">Cuéntanos sobre tu próximo caso de estudio</h3>
