@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://b2bcasestudy.github.io/sitemap.xml
