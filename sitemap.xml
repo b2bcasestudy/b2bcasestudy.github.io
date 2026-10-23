@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <!-- Español (Global) -->
   <url>
     <loc>https://b2bcasestudy.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
@@ -15,7 +13,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
 
-  <!-- Estados Unidos -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-us/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
@@ -27,7 +24,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
 
-  <!-- Reino Unido -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-gb/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
@@ -39,7 +35,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
 
-  <!-- Francés -->
   <url>
     <loc>https://b2bcasestudy.github.io/fr/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
@@ -51,7 +46,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
 
-  <!-- Alemán -->
   <url>
     <loc>https://b2bcasestudy.github.io/de/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
@@ -63,7 +57,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
 
-  <!-- Portugués -->
   <url>
     <loc>https://b2bcasestudy.github.io/pt/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
@@ -74,5 +67,11 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://b2bcasestudy.github.io/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
+
+  <!-- URLs de la Industria SaaS -->
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/</loc></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/northwind-sales-cycle/</loc></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/cloudscale-churn-reduction/</loc></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/devpulse-arr-growth/</loc></url>
 
 </urlset>
