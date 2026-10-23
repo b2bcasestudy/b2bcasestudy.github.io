@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B2B Case Studies | Select Your Market & Region</title>
+  <title>B2B Case Studies | Global Network & Region Selector</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style> body { font-family: 'Inter', sans-serif; } </style>
 
-  <!-- Google Analytics 4 & Clarity -->
+  <!-- Google Analytics 4 & Clarity (Reemplazar IDs) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -19,10 +19,9 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
 
-  <!-- Script de Redirección Inteligente por Idioma/Región -->
+  <!-- Redirección Inteligente por Idioma/Región -->
   <script>
     (function() {
-      // 1. Si el usuario ya eligió un idioma previamente, redirigir
       const savedLang = localStorage.getItem('user_lang_preference');
       if (savedLang) {
         if (savedLang === 'en-us') window.location.href = '/en-us/';
@@ -34,7 +33,6 @@
         return;
       }
 
-      // 2. Autodetectar según idioma del navegador
       const browserLang = navigator.language || navigator.userLanguage;
       if (browserLang.startsWith('es')) {
         localStorage.setItem('user_lang_preference', 'es');
@@ -51,215 +49,165 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between">
 
-  <!-- Header mínimo -->
+  <!-- Header Superior -->
   <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur py-4">
     <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <span class="bg-emerald-500 text-slate-950 font-bold w-8 h-8 flex items-center justify-center rounded-lg text-lg">C</span>
+      <div class="flex items-center gap-3">
+        <span class="bg-emerald-500 text-slate-950 font-extrabold w-8 h-8 flex items-center justify-center rounded-lg text-lg shadow-lg shadow-emerald-500/20">C</span>
         <span class="font-bold text-xl tracking-tight text-white">B2B Case Studies</span>
       </div>
-      <span class="text-xs text-slate-500 uppercase tracking-widest font-semibold">Global Network</span>
+      <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-slate-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Global Gateway
+      </div>
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-4 py-16 w-full">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-        Select Your Region & Language
+  <!-- Contenido Principal / Botonera Global -->
+  <main class="max-w-6xl mx-auto px-4 py-12 w-full">
+    
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-3">
+        Selecciona tu Mercado
       </h1>
-      <p class="text-slate-400 text-base md:text-lg">
-        Access tailored B2B customer success stories, localized metrics, and market-specific discourses.
+      <p class="text-slate-400 text-sm md:text-base">
+        Accede a casos de estudio B2B adaptados al discurso comercial, moneda y gobernanza de cada región.
       </p>
     </div>
 
-    <!-- Grid de los 20 Principales Mercados e Idiomas -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      
-      <!-- Mercado 1: US (Activo) -->
-      <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900 border border-emerald-500/50 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇺🇸</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">United States</div>
-          <div class="text-xs text-slate-400">English ($ USD)</div>
-        </div>
-      </a>
+    <!-- BOTONERA PRINCIPAL: MERCADOS DESTACADOS / ACTIVOS -->
+    <div class="mb-12">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-4 px-1">Mercados Activos & Optimizado</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <!-- Botón 1: US -->
+        <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900 border border-emerald-500/40 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02] shadow-lg hover:shadow-emerald-500/10">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🇺🇸</span>
+            <div>
+              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">United States</div>
+              <div class="text-xs text-slate-400">Direct ROI & Acceleration ($ USD)</div>
+            </div>
+          </div>
+          <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
+        </a>
 
-      <!-- Mercado 2: UK (Activo) -->
-      <a href="/en-gb/" onclick="localStorage.setItem('user_lang_preference', 'en-gb')" class="bg-slate-900 border border-emerald-500/50 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇬🇧</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">United Kingdom</div>
-          <div class="text-xs text-slate-400">English (£ GBP)</div>
-        </div>
-      </a>
+        <!-- Botón 2: UK -->
+        <a href="/en-gb/" onclick="localStorage.setItem('user_lang_preference', 'en-gb')" class="bg-slate-900 border border-emerald-500/40 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02] shadow-lg hover:shadow-emerald-500/10">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🇬🇧</span>
+            <div>
+              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">United Kingdom</div>
+              <div class="text-xs text-slate-400">Governance & Risk Mitigation (£ GBP)</div>
+            </div>
+          </div>
+          <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
+        </a>
 
-      <!-- Mercado 3: España / LATAM (Activo) -->
-      <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900 border border-emerald-500/50 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇪🇸</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">España / LATAM</div>
-          <div class="text-xs text-slate-400">Español (€ / $)</div>
-        </div>
-      </a>
+        <!-- Botón 3: ES / LATAM -->
+        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900 border border-emerald-500/40 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02] shadow-lg hover:shadow-emerald-500/10">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🇪🇸</span>
+            <div>
+              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">España / LATAM</div>
+              <div class="text-xs text-slate-400">Confianza e Impacto Institucional (€ / $)</div>
+            </div>
+          </div>
+          <span class="text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
+        </a>
 
-      <!-- Mercado 4: Francia (Activo) -->
-      <a href="/fr/" onclick="localStorage.setItem('user_lang_preference', 'fr')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇫🇷</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">France</div>
-          <div class="text-xs text-slate-400">Français (€ EUR)</div>
-        </div>
-      </a>
+        <!-- Botón 4: Francia -->
+        <a href="/fr/" onclick="localStorage.setItem('user_lang_preference', 'fr')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02]">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🇫🇷</span>
+            <div>
+              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">France</div>
+              <div class="text-xs text-slate-400">Rigueur & Souveraineté (€ EUR)</div>
+            </div>
+          </div>
+          <span class="text-slate-500 group-hover:text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
+        </a>
 
-      <!-- Mercado 5: Alemania (Activo) -->
-      <a href="/de/" onclick="localStorage.setItem('user_lang_preference', 'de')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇩🇪</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">Deutschland</div>
-          <div class="text-xs text-slate-400">Deutsch (€ EUR)</div>
-        </div>
-      </a>
+        <!-- Botón 5: Alemania -->
+        <a href="/de/" onclick="localStorage.setItem('user_lang_preference', 'de')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02]">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🇩🇪</span>
+            <div>
+              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">Deutschland</div>
+              <div class="text-xs text-slate-400">Präzision & Datenschutz (€ EUR)</div>
+            </div>
+          </div>
+          <span class="text-slate-500 group-hover:text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
+        </a>
 
-      <!-- Mercado 6: Brasil (Activo) -->
-      <a href="/pt/" onclick="localStorage.setItem('user_lang_preference', 'pt')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇧🇷</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">Brasil</div>
-          <div class="text-xs text-slate-400">Português (R$)</div>
-        </div>
-      </a>
+        <!-- Botón 6: Brasil -->
+        <a href="/pt/" onclick="localStorage.setItem('user_lang_preference', 'pt')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-5 rounded-2xl flex items-center justify-between transition-all group hover:scale-[1.02]">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🇧🇷</span>
+            <div>
+              <div class="font-bold text-white text-base group-hover:text-emerald-400 transition">Brasil</div>
+              <div class="text-xs text-slate-400">Agilidade & Escala (R$ BRL)</div>
+            </div>
+          </div>
+          <span class="text-slate-500 group-hover:text-emerald-400 font-bold group-hover:translate-x-1 transition">→</span>
+        </a>
 
-      <!-- Mercado 7: México -->
-      <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇲🇽</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">México</div>
-          <div class="text-xs text-slate-400">Español ($ MXN)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 8: Canadá -->
-      <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇨🇦</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">Canada</div>
-          <div class="text-xs text-slate-400">English / Français</div>
-        </div>
-      </a>
-
-      <!-- Mercado 9: Italia -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇮🇹</span>
-        <div>
-          <div class="font-bold text-white text-sm">Italia</div>
-          <div class="text-xs text-slate-500">Italiano (€ EUR)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 10: Países Bajos -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇳🇱</span>
-        <div>
-          <div class="font-bold text-white text-sm">Nederland</div>
-          <div class="text-xs text-slate-500">Nederlands (€)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 11: Japón -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇯🇵</span>
-        <div>
-          <div class="font-bold text-white text-sm">日本</div>
-          <div class="text-xs text-slate-500">日本語 (¥ JPY)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 12: China -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇨🇳</span>
-        <div>
-          <div class="font-bold text-white text-sm">中国</div>
-          <div class="text-xs text-slate-500">简体中文 (¥ CNY)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 13: Australia -->
-      <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇦🇺</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">Australia</div>
-          <div class="text-xs text-slate-400">English ($ AUD)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 14: India -->
-      <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇮🇳</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">India</div>
-          <div class="text-xs text-slate-400">English (₹ INR)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 15: Corea del Sur -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇰🇷</span>
-        <div>
-          <div class="font-bold text-white text-sm">대한민국</div>
-          <div class="text-xs text-slate-500">한국어 (₩ KRW)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 16: Suecia -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇸🇪</span>
-        <div>
-          <div class="font-bold text-white text-sm">Sverige</div>
-          <div class="text-xs text-slate-500">Svenska (SEK)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 17: Polonia -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇵🇱</span>
-        <div>
-          <div class="font-bold text-white text-sm">Polska</div>
-          <div class="text-xs text-slate-500">Polski (PLN)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 18: Turquía -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇹🇷</span>
-        <div>
-          <div class="font-bold text-white text-sm">Türkiye</div>
-          <div class="text-xs text-slate-500">Türkçe (TRY)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 19: Argentina -->
-      <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900 border border-slate-800 hover:border-emerald-400 p-4 rounded-xl flex items-center gap-3 transition group">
-        <span class="text-2xl">🇦🇷</span>
-        <div>
-          <div class="font-bold text-white text-sm group-hover:text-emerald-400">Argentina</div>
-          <div class="text-xs text-slate-400">Español ($ ARS)</div>
-        </div>
-      </a>
-
-      <!-- Mercado 20: Emiratos Árabes -->
-      <a href="/en-us/" class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl flex items-center gap-3 opacity-60">
-        <span class="text-2xl">🇦🇪</span>
-        <div>
-          <div class="font-bold text-white text-sm">UAE</div>
-          <div class="text-xs text-slate-500">العربية / English</div>
-        </div>
-      </a>
-
+      </div>
     </div>
+
+    <!-- BOTONERA SECUNDARIA: RED GLOBAL -->
+    <div>
+      <h2 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4 px-1">Red Global Adicional</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        
+        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
+          <span class="text-xl">🇲🇽</span>
+          <span class="text-xs font-medium text-slate-300">México</span>
+        </a>
+
+        <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
+          <span class="text-xl">🇨🇦</span>
+          <span class="text-xs font-medium text-slate-300">Canada</span>
+        </a>
+
+        <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
+          <span class="text-xl">🇦🇺</span>
+          <span class="text-xs font-medium text-slate-300">Australia</span>
+        </a>
+
+        <a href="/en-us/" onclick="localStorage.setItem('user_lang_preference', 'en-us')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
+          <span class="text-xl">🇮🇳</span>
+          <span class="text-xs font-medium text-slate-300">India</span>
+        </a>
+
+        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
+          <span class="text-xl">🇦🇷</span>
+          <span class="text-xs font-medium text-slate-300">Argentina</span>
+        </a>
+
+        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
+          <span class="text-xl">🇨🇱</span>
+          <span class="text-xs font-medium text-slate-300">Chile</span>
+        </a>
+
+        <a href="/es/" onclick="localStorage.setItem('user_lang_preference', 'es')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
+          <span class="text-xl">🇨🇴</span>
+          <span class="text-xs font-medium text-slate-300">Colombia</span>
+        </a>
+
+        <a href="/en-gb/" onclick="localStorage.setItem('user_lang_preference', 'en-gb')" class="bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 p-3 rounded-xl flex items-center gap-3 transition">
+          <span class="text-xl">🇮🇪</span>
+          <span class="text-xs font-medium text-slate-300">Ireland</span>
+        </a>
+
+      </div>
+    </div>
+
   </main>
 
+  <!-- Footer Minimalista -->
   <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    <p>© 2026 B2B Case Studies. Global Architecture.</p>
+    <p>© 2026 B2B Case Studies Platform. Multi-Market Architecture.</p>
   </footer>
 
 </body>
