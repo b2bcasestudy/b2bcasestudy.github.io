@@ -17,6 +17,32 @@
   <link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/" />
   <link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/" />
   <link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/" />
+
+  <script>
+  (function () {
+    // 1. Evitar bucles: Verificar si el usuario ya eligió un idioma manualmente
+    const userPreference = localStorage.getItem('user_lang_preference');
+    
+    // Si ya seleccionó manualmente permanecer o cambiar, respetamos su decisión
+    if (userPreference) return;
+
+    // 2. Obtener el idioma del navegador del visitante
+    const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    const currentPath = window.location.pathname;
+
+    // 3. Ejecutar redirección solo si el usuario está en la página principal raíz
+    if (currentPath === '/' || currentPath === '/index.html') {
+      if (browserLang.includes('en-gb') || browserLang.includes('en-uk') || browserLang.includes('en-ie')) {
+        // Redirigir a Reino Unido / Europa
+        window.location.href = '/en-gb/';
+      } else if (browserLang.startsWith('en')) {
+        // Redirigir a Estados Unidos / Mercado global en inglés
+        window.location.href = '/en-us/';
+      }
+      // Si el navegador está en español (es) o cualquier otro idioma, permanece en la raíz /
+    }
+  })();
+</script>
 </head>
 
 <body class="bg-slate-950 text-slate-100 antialiased">
