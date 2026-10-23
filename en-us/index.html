@@ -29,13 +29,13 @@
       </div>
 
       <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-        <a href="/en-us/industry/saas/" class="hover:text-white transition">SaaS Industry</a>
-        <a href="#industries" class="hover:text-white transition">All Industries</a>
+        <a href="/en-us/industry/saas/" class="hover:text-white transition">SaaS Industry Hub</a>
+        <a href="#featured-cases" class="hover:text-white transition">Case Studies</a>
         <a href="#contact" class="hover:text-white transition">Contact</a>
       </nav>
 
       <div class="flex items-center gap-3">
-        <!-- Selector Desplegable de 6 Idiomas -->
+        <!-- Selector Desplegable de Idiomas -->
         <div class="relative group">
           <button class="flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-300 hover:text-white px-3 py-1.5 rounded-lg text-sm font-medium transition">
             <span>🇺🇸 English (US)</span>
@@ -71,16 +71,16 @@
           Data-backed customer stories written for US enterprise buyers to shorten sales cycles and boost conversion rates.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="/en-us/industry/saas/" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-lg text-center transition">Explore SaaS Case Studies</a>
-          <a href="#contact" class="border border-slate-700 hover:bg-slate-900 text-slate-300 font-semibold px-6 py-3 rounded-lg text-center transition">Request Custom Study</a>
+          <a href="/en-us/industry/saas/" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-lg text-center transition">Browse SaaS Industry Hub</a>
+          <a href="#featured-cases" class="border border-slate-700 hover:bg-slate-900 text-slate-300 font-semibold px-6 py-3 rounded-lg text-center transition">View All 3 SaaS Cases</a>
         </div>
       </div>
 
-      <!-- Featured Card linking to Case Study 1 -->
+      <!-- Hero Card linking to Case Study 1 -->
       <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl">
         <div class="flex justify-between items-center mb-4 text-xs text-slate-400">
-          <span class="bg-slate-800 text-slate-300 px-2 py-1 rounded">Featured · SaaS</span>
-          <span>US Market</span>
+          <span class="bg-slate-800 text-slate-300 px-2 py-1 rounded">Featured Case Study</span>
+          <span>SaaS Vertical</span>
         </div>
         <h3 class="text-xl font-bold text-white mb-4">How Northwind cut its enterprise sales cycle by 27 days</h3>
         <div class="grid grid-cols-3 gap-2 mb-6 text-center">
@@ -103,39 +103,71 @@
       </div>
     </section>
 
-    <!-- Industry Vertical Grid Section -->
-    <section id="industries" class="py-16 bg-slate-900/50 border-y border-slate-800">
+    <!-- Industry Hubs & Direct Case Study Links -->
+    <section id="featured-cases" class="py-16 bg-slate-900/50 border-y border-slate-800">
       <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-          <h2 class="text-3xl font-bold text-white mb-4">Targeted US B2B Verticals</h2>
-          <p class="text-slate-400">Industry-specific case studies structured around executive pain points.</p>
+        <div class="flex justify-between items-end mb-10">
+          <div>
+            <span class="text-xs font-semibold text-emerald-400 uppercase tracking-widest">Industry Vertical 01</span>
+            <h2 class="text-3xl font-bold text-white mt-1">Enterprise SaaS & Software</h2>
+          </div>
+          <a href="/en-us/industry/saas/" class="text-sm font-semibold text-emerald-400 hover:underline">Go to SaaS Hub Page →</a>
         </div>
 
+        <!-- Cards linking directly to individual cases -->
         <div class="grid md:grid-cols-3 gap-6">
-          <!-- Active Vertical: SaaS -->
-          <div class="bg-slate-950 border border-emerald-500/40 p-6 rounded-xl flex flex-col justify-between">
+          <div class="bg-slate-950 border border-slate-800 p-6 rounded-xl flex flex-col justify-between hover:border-emerald-500/50 transition">
             <div>
-              <span class="text-xs text-emerald-400 font-semibold uppercase">Active Industry Hub</span>
-              <h3 class="text-xl font-bold text-white mt-2 mb-2">Enterprise SaaS & Software</h3>
-              <p class="text-xs text-slate-400 mb-4">3 verified case studies covering sales cycle reduction, churn control, and ARR scaling.</p>
+              <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Case 01</span>
+              <h3 class="text-lg font-bold text-white mt-3 mb-2">Northwind Analytics</h3>
+              <p class="text-xs text-slate-400 mb-6">Reduced enterprise sales cycle by 27 days during procurement reviews.</p>
             </div>
-            <a href="/en-us/industry/saas/" class="text-emerald-400 hover:underline text-sm font-semibold">View SaaS Hub & Case Studies →</a>
+            <a href="/en-us/industry/saas/northwind-sales-cycle/" class="text-emerald-400 hover:underline text-xs font-semibold">Read Case Study →</a>
           </div>
 
-          <!-- Upcoming Vertical: Cybersecurity -->
-          <div class="bg-slate-950 border border-slate-800 p-6 rounded-xl opacity-60">
-            <span class="text-xs text-slate-500 font-semibold uppercase">Coming Soon</span>
-            <h3 class="text-xl font-bold text-white mt-2 mb-2">Cybersecurity & SecOps</h3>
-            <p class="text-xs text-slate-400">Compliance proof, incident reduction, and CISO risk mitigation stories.</p>
+          <div class="bg-slate-950 border border-slate-800 p-6 rounded-xl flex flex-col justify-between hover:border-emerald-500/50 transition">
+            <div>
+              <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Case 02</span>
+              <h3 class="text-lg font-bold text-white mt-3 mb-2">CloudScale Infrastructure</h3>
+              <p class="text-xs text-slate-400 mb-6">Reduced gross customer churn by 42% and increased NRR to 118%.</p>
+            </div>
+            <a href="/en-us/industry/saas/cloudscale-churn-reduction/" class="text-emerald-400 hover:underline text-xs font-semibold">Read Case Study →</a>
           </div>
 
-          <!-- Upcoming Vertical: FinTech -->
-          <div class="bg-slate-950 border border-slate-800 p-6 rounded-xl opacity-60">
-            <span class="text-xs text-slate-500 font-semibold uppercase">Coming Soon</span>
-            <h3 class="text-xl font-bold text-white mt-2 mb-2">FinTech & Payments</h3>
-            <p class="text-xs text-slate-400">Cost per transaction reduction and automated month-end reconciliation.</p>
+          <div class="bg-slate-950 border border-slate-800 p-6 rounded-xl flex flex-col justify-between hover:border-emerald-500/50 transition">
+            <div>
+              <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Case 03</span>
+              <h3 class="text-lg font-bold text-white mt-3 mb-2">DevPulse Platform</h3>
+              <p class="text-xs text-slate-400 mb-6">Scaled ARR 4x from $2M to $8M by targeting enterprise engineering buyers.</p>
+            </div>
+            <a href="/en-us/industry/saas/devpulse-arr-growth/" class="text-emerald-400 hover:underline text-xs font-semibold">Read Case Study →</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 max-w-xl mx-auto px-4">
+      <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
+        <h3 class="text-2xl font-bold text-white mb-2 text-center">Get Your B2B Case Study</h3>
+        <p class="text-slate-400 text-sm mb-6 text-center">Tell us about your product and target accounts for a custom quote.</p>
+        <form class="space-y-4" action="#" method="POST">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Full Name</label>
+            <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Work Email</label>
+            <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Project Details</label>
+            <textarea rows="4" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg transition text-sm">
+            Request Quote
+          </button>
+        </form>
       </div>
     </section>
   </main>
