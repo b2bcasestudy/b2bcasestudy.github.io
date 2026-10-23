@@ -12,51 +12,35 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased">
 
+  <!-- HEADER UNIVERSAL -->
   <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="/en-us/industry/saas/" class="text-xs text-slate-400 hover:text-emerald-400 transition">← Back to SaaS Case Studies</a>
-      <span class="text-xs bg-slate-900 border border-slate-800 text-emerald-400 px-3 py-1 rounded-full">SaaS Case Study #03</span>
+      <div class="flex items-center gap-2">
+        <span class="bg-emerald-500 text-slate-950 font-bold w-6 h-6 flex items-center justify-center rounded text-sm">C</span>
+        <a href="/en-us/" class="font-semibold text-white hover:text-emerald-400 transition">B2B Case Studies</a>
+      </div>
+      <a href="/en-us/industry/saas/" class="text-sm text-slate-400 hover:text-emerald-400 transition">← Back to SaaS Hub</a>
     </div>
   </header>
 
   <main class="max-w-4xl mx-auto px-4 py-12">
+    <!-- Header Info -->
     <div class="mb-10">
       <span class="text-xs font-semibold text-emerald-400 uppercase tracking-widest">DevPulse Platform</span>
       <h1 class="text-3xl md:text-5xl font-extrabold text-white mt-2 mb-6">How DevPulse Scaled ARR from $2M to $8M in 14 Months</h1>
       <p class="text-slate-400 text-lg">By repositioning developer productivity tools around enterprise-grade ROI, DevPulse expanded average contract value (ACV) by 65%.</p>
     </div>
 
-    <div class="grid grid-cols-3 gap-4 bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-12 text-center">
-      <div>
-        <div class="text-3xl font-extrabold text-emerald-400">4x ARR</div>
-        <div class="text-xs text-slate-400 mt-1">Growth in 14 Mo</div>
-      </div>
-      <div>
-        <div class="text-3xl font-extrabold text-emerald-400">+$14K</div>
-        <div class="text-xs text-slate-400 mt-1">Higher Average ACV</div>
-      </div>
-      <div>
-        <div class="text-3xl font-extrabold text-emerald-400">92%</div>
-        <div class="text-xs text-slate-400 mt-1">Enterprise Win Rate</div>
-      </div>
-    </div>
-
-    <article class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-relaxed">
+    <!-- Article Content -->
+    <article class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-relaxed mb-16">
       <div>
         <h2 class="text-2xl font-bold text-white mb-3">The Challenge</h2>
         <p>DevPulse was popular among individual developers, but struggled to move upmarket to sell site-wide enterprise licenses. VP of Engineering buyers needed hard proof of developer velocity gains.</p>
       </div>
-
       <div>
         <h2 class="text-2xl font-bold text-white mb-3">The Solution</h2>
         <p>We developed metric-driven case studies highlighting engineering hours saved, deployment error reduction, and faster feature shipping cycles for mid-size engineering orgs.</p>
       </div>
-
-      <blockquote class="bg-slate-900 border-l-4 border-emerald-500 p-6 rounded-r-xl italic text-slate-200">
-        "Transitioning from selling features to selling proven business metrics was the single biggest turning point for our ARR expansion."
-        <span class="block not-italic text-xs text-emerald-400 font-semibold mt-3">— Sarah Jenkins, CEO @ DevPulse</span>
-      </blockquote>
-
       <div>
         <h2 class="text-2xl font-bold text-white mb-3">The Results</h2>
         <ul class="list-disc pl-6 space-y-2 text-slate-300">
@@ -66,10 +50,33 @@
         </ul>
       </div>
     </article>
-  </main>
 
-  <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-    <p>© 2026 B2B Case Studies. All rights reserved.</p>
-  </footer>
+    <!-- BLOQUE READ NEXT (INTERCONEXIÓN) -->
+    <section class="border-t border-slate-800 pt-12 mb-12">
+      <h3 class="text-2xl font-bold text-white mb-6">Read Next: More SaaS Case Studies</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Enlace a Caso 1 -->
+        <a href="/en-us/industry/saas/northwind-sales-cycle/" class="bg-slate-900 border border-slate-800 p-6 rounded-xl block hover:border-emerald-500/50 transition">
+          <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Case 01</span>
+          <h4 class="text-lg font-bold text-white mt-3 mb-2">Northwind Analytics</h4>
+          <p class="text-xs text-slate-400">Reduced enterprise sales cycle by 27 days during procurement reviews.</p>
+        </a>
+        <!-- Enlace a Caso 2 -->
+        <a href="/en-us/industry/saas/cloudscale-churn-reduction/" class="bg-slate-900 border border-slate-800 p-6 rounded-xl block hover:border-emerald-500/50 transition">
+          <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Case 02</span>
+          <h4 class="text-lg font-bold text-white mt-3 mb-2">CloudScale Infrastructure</h4>
+          <p class="text-xs text-slate-400">Reduced gross customer churn by 42% and increased NRR to 118%.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA FINAL PARA EVITAR CALLEJÓN SIN SALIDA -->
+    <section class="text-center bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-8">
+      <h3 class="text-xl font-bold text-white mb-3">Ready to close deals faster?</h3>
+      <p class="text-sm text-slate-400 mb-6">Let us interview your best clients and turn them into your strongest sales asset.</p>
+      <a href="/en-us/#contact" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-lg transition">Request a Quote</a>
+    </section>
+
+  </main>
 </body>
 </html>
