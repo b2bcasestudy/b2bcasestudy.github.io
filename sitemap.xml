@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- 1. GLOBAL GATEWAY (Raíz) -->
+  <!-- 1. PORTADA PRINCIPAL (Global Gateway) -->
   <url>
     <loc>https://b2bcasestudy.github.io/</loc>
     <lastmod>2026-10-23</lastmod>
@@ -14,7 +14,24 @@
     <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/" />
   </url>
 
-  <!-- 2. HOME ESTADOS UNIDOS -->
+  <!-- 2. MERCADO ESPAÑA / LATAM (/es/) -->
+  <url>
+    <loc>https://b2bcasestudy.github.io/es/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/" />
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/" />
+  </url>
+  <url>
+    <loc>https://b2bcasestudy.github.io/es/industry/saas/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 3. MERCADO ESTADOS UNIDOS (/en-us/) -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-us/</loc>
     <lastmod>2026-10-23</lastmod>
@@ -24,15 +41,12 @@
     <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/es/" />
   </url>
-
-  <!-- Hub SaaS EE. UU. -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-us/industry/saas/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Casos SaaS EE. UU. -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-us/industry/saas/northwind-sales-cycle/</loc>
     <lastmod>2026-10-23</lastmod>
@@ -52,7 +66,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 3. HOME REINO UNIDO -->
+  <!-- 4. MERCADO REINO UNIDO (/en-gb/) -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-gb/</loc>
     <lastmod>2026-10-23</lastmod>
@@ -62,15 +76,12 @@
     <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/es/" />
   </url>
-
-  <!-- Hub SaaS Reino Unido -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-gb/industry/saas/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Casos SaaS Reino Unido -->
   <url>
     <loc>https://b2bcasestudy.github.io/en-gb/industry/saas/northwind-sales-cycle/</loc>
     <lastmod>2026-10-23</lastmod>
@@ -85,44 +96,6 @@
   </url>
   <url>
     <loc>https://b2bcasestudy.github.io/en-gb/industry/saas/devpulse-arr-growth/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 4. HOME ESPAÑA / LATAM -->
-  <url>
-    <loc>https://b2bcasestudy.github.io/es/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/es/" />
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/" />
-    <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/" />
-  </url>
-
-  <!-- Hub SaaS España / LATAM -->
-  <url>
-    <loc>https://b2bcasestudy.github.io/es/industry/saas/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <!-- Casos SaaS España / LATAM -->
-  <url>
-    <loc>https://b2bcasestudy.github.io/es/industry/saas/northwind-sales-cycle/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://b2bcasestudy.github.io/es/industry/saas/cloudscale-churn-reduction/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://b2bcasestudy.github.io/es/industry/saas/devpulse-arr-growth/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
