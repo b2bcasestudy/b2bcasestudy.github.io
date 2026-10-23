@@ -145,31 +145,34 @@
       </div>
     </section>
 
-    <!-- Formulario de Contacto Funcional vía AJAX -->
+    <!-- Formulario de Contacto Funcional con Web3Forms -->
     <section id="contact" class="py-20 max-w-xl mx-auto px-4">
       <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-2xl">
         <h3 class="text-2xl font-bold text-white mb-2 text-center">Get Your B2B Case Study</h3>
         <p class="text-slate-400 text-sm mb-6 text-center">Tell us about your product and target accounts for a custom quote.</p>
         
         <form id="contact-form" class="space-y-4">
+          <input type="hidden" name="access_key" value="5715359a-b6c8-4457-b385-da5e09a2d684">
+          <input type="hidden" name="subject" value="New B2B Case Study Inquiry - US Market">
+
           <div>
             <label class="block text-xs font-medium text-slate-300 mb-1">Full Name</label>
-            <input type="text" name="Name" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+            <input type="text" name="name" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
           </div>
 
           <div>
             <label class="block text-xs font-medium text-slate-300 mb-1">Work Email</label>
-            <input type="email" name="Work Email" required placeholder="john@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+            <input type="email" name="email" required placeholder="john@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
           </div>
 
           <div>
             <label class="block text-xs font-medium text-slate-300 mb-1">Company Name</label>
-            <input type="text" name="Company" placeholder="Acme Corp" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+            <input type="text" name="company" placeholder="Acme Corp" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
           </div>
 
           <div>
             <label class="block text-xs font-medium text-slate-300 mb-1">Project Details</label>
-            <textarea name="Project Details" rows="4" required placeholder="Describe your product, target customer persona, and current sales goals..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500"></textarea>
+            <textarea name="message" rows="4" required placeholder="Describe your product, target customer persona, and current sales goals..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500"></textarea>
           </div>
 
           <button type="submit" id="submit-btn" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-lg transition text-sm">
@@ -205,17 +208,20 @@
       errorBox.classList.add('hidden');
 
       const formData = new FormData(form);
-      formData.append('_subject', 'New B2B Case Study Inquiry - US Market');
-      formData.append('_captcha', 'false');
+      const json = JSON.stringify(Object.fromEntries(formData));
 
       try {
-        const response = await fetch('https://formsubmit.co/ajax/alejocastilloproyecto@gmail.com', {
+        const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
         });
 
-        if (response.ok) {
+        const result = await response.json();
+        if (result.success) {
           form.reset();
           successBox.classList.remove('hidden');
         } else {
