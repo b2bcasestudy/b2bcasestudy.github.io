@@ -1,29 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <!-- Portadas de Idiomas (Raíz) -->
+
+  <!-- 1. GLOBAL GATEWAY & PÁGINAS GENERALES (4 URLs) -->
   <url>
     <loc>https://b2bcasestudy.github.io/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
-    <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://b2bcasestudy.github.io/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://b2bcasestudy.github.io/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://b2bcasestudy.github.io/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://b2bcasestudy.github.io/privacy-policy/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://b2bcasestudy.github.io/terms/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://b2bcasestudy.github.io/global-contact/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
-  <url><loc>https://b2bcasestudy.github.io/en-us/</loc></url>
-  <url><loc>https://b2bcasestudy.github.io/en-gb/</loc></url>
-  <url><loc>https://b2bcasestudy.github.io/fr/</loc></url>
-  <url><loc>https://b2bcasestudy.github.io/de/</loc></url>
-  <url><loc>https://b2bcasestudy.github.io/pt/</loc></url>
+  <!-- 2. MERCADOS PRINCIPALES CORE (6 Mercados x 21 URLs = 126 URLs) -->
 
-  <!-- EE. UU. - Industria SaaS & Casos de Estudio -->
-  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/</loc></url>
-  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/northwind-sales-cycle/</loc></url>
-  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/cloudscale-churn-reduction/</loc></url>
-  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/devpulse-arr-growth/</loc></url>
+  <!-- ==================== MERCADO: US (en-us) ==================== -->
+  <url><loc>https://b2bcasestudy.github.io/en-us/</loc><priority>0.9</priority></url>
+  <!-- Hub 1: SaaS -->
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/northwind-sales-cycle/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/cloudscale-churn-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/saas/devpulse-arr-growth/</loc><priority>0.7</priority></url>
+  <!-- Hub 2: Fintech -->
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/fintech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/fintech/payflow-compliance-speed/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/fintech/bankingapi-open-banking/</loc><priority>0.7</priority></url>
+  <!-- Hub 3: Healthtech -->
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/healthtech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/healthtech/meddata-hipaa-cloud/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/healthtech/carenode-patient-outcomes/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/healthtech/pharmaconnect-supply-chain/</loc><priority>0.7</priority></url>
+  <!-- Hub 4: E-Commerce B2B -->
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/ecommerce/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/ecommerce/ordergrid-wholesale-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/ecommerce/cartsync-conversion-lift/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/ecommerce/inventoryone-multi-warehouse/</loc><priority>0.7</priority></url>
+  <!-- Hub 5: Cybersecurity -->
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/cybersecurity/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/cybersecurity/shieldai-threat-response/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/cybersecurity/zerotrust-identity-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-us/industry/cybersecurity/vaultlock-compliance-audit/</loc><priority>0.7</priority></url>
+
+  <!-- ==================== MERCADO: UK (en-gb) ==================== -->
+  <url><loc>https://b2bcasestudy.github.io/en-gb/</loc><priority>0.9</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/saas/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/saas/northwind-sales-cycle/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/saas/cloudscale-churn-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/saas/devpulse-arr-growth/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/fintech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/fintech/payflow-compliance-speed/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/fintech/bankingapi-open-banking/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/healthtech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/healthtech/meddata-hipaa-cloud/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/healthtech/carenode-patient-outcomes/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/healthtech/pharmaconnect-supply-chain/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/ecommerce/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/ecommerce/ordergrid-wholesale-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/ecommerce/cartsync-conversion-lift/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/ecommerce/inventoryone-multi-warehouse/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/cybersecurity/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/cybersecurity/shieldai-threat-response/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/cybersecurity/zerotrust-identity-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/en-gb/industry/cybersecurity/vaultlock-compliance-audit/</loc><priority>0.7</priority></url>
+
+  <!-- ==================== MERCADO: ESPAÑA / LATAM (es) ==================== -->
+  <url><loc>https://b2bcasestudy.github.io/es/</loc><priority>0.9</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/saas/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/saas/northwind-sales-cycle/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/saas/cloudscale-churn-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/saas/devpulse-arr-growth/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/fintech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/fintech/payflow-compliance-speed/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/fintech/bankingapi-open-banking/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/healthtech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/healthtech/meddata-hipaa-cloud/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/healthtech/carenode-patient-outcomes/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/healthtech/pharmaconnect-supply-chain/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/ecommerce/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/ecommerce/ordergrid-wholesale-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/ecommerce/cartsync-conversion-lift/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/ecommerce/inventoryone-multi-warehouse/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/cybersecurity/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/cybersecurity/shieldai-threat-response/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/cybersecurity/zerotrust-identity-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/es/industry/cybersecurity/vaultlock-compliance-audit/</loc><priority>0.7</priority></url>
+
+  <!-- ==================== MERCADO: FRANCIA (fr) ==================== -->
+  <url><loc>https://b2bcasestudy.github.io/fr/</loc><priority>0.9</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/saas/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/saas/northwind-sales-cycle/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/saas/cloudscale-churn-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/saas/devpulse-arr-growth/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/fintech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/fintech/payflow-compliance-speed/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/fintech/bankingapi-open-banking/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/healthtech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/healthtech/meddata-hipaa-cloud/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/healthtech/carenode-patient-outcomes/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/healthtech/pharmaconnect-supply-chain/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/ecommerce/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/ecommerce/ordergrid-wholesale-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/ecommerce/cartsync-conversion-lift/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/ecommerce/inventoryone-multi-warehouse/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/cybersecurity/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/cybersecurity/shieldai-threat-response/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/cybersecurity/zerotrust-identity-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/fr/industry/cybersecurity/vaultlock-compliance-audit/</loc><priority>0.7</priority></url>
+
+  <!-- ==================== MERCADO: ALEMANIA (de) ==================== -->
+  <url><loc>https://b2bcasestudy.github.io/de/</loc><priority>0.9</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/saas/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/saas/northwind-sales-cycle/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/saas/cloudscale-churn-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/saas/devpulse-arr-growth/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/fintech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/fintech/payflow-compliance-speed/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/fintech/bankingapi-open-banking/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/healthtech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/healthtech/meddata-hipaa-cloud/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/healthtech/carenode-patient-outcomes/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/healthtech/pharmaconnect-supply-chain/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/ecommerce/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/ecommerce/ordergrid-wholesale-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/ecommerce/cartsync-conversion-lift/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/ecommerce/inventoryone-multi-warehouse/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/cybersecurity/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/cybersecurity/shieldai-threat-response/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/cybersecurity/zerotrust-identity-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/de/industry/cybersecurity/vaultlock-compliance-audit/</loc><priority>0.7</priority></url>
+
+  <!-- ==================== MERCADO: BRASIL (pt) ==================== -->
+  <url><loc>https://b2bcasestudy.github.io/pt/</loc><priority>0.9</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/saas/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/saas/northwind-sales-cycle/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/saas/cloudscale-churn-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/saas/devpulse-arr-growth/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/fintech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/fintech/payflow-compliance-speed/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/fintech/bankingapi-open-banking/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/healthtech/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/healthtech/meddata-hipaa-cloud/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/healthtech/carenode-patient-outcomes/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/healthtech/pharmaconnect-supply-chain/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/ecommerce/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/ecommerce/ordergrid-wholesale-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/ecommerce/cartsync-conversion-lift/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/ecommerce/inventoryone-multi-warehouse/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/cybersecurity/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/cybersecurity/shieldai-threat-response/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/cybersecurity/zerotrust-identity-scale/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/pt/industry/cybersecurity/vaultlock-compliance-audit/</loc><priority>0.7</priority></url>
+
+
+  <!-- 3. MERCADOS SECUNDARIOS (10 Mercados x 9 URLs = 90 URLs) -->
+
+  <!-- México (mx) -->
+  <url><loc>https://b2bcasestudy.github.io/mx/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/mx/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/mx/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/mx/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/mx/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/mx/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/mx/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/mx/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/mx/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- Canadá (ca) -->
+  <url><loc>https://b2bcasestudy.github.io/ca/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ca/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ca/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ca/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ca/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ca/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ca/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ca/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ca/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- Australia (au) -->
+  <url><loc>https://b2bcasestudy.github.io/au/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/au/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/au/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/au/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/au/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/au/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/au/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/au/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/au/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- India (in) -->
+  <url><loc>https://b2bcasestudy.github.io/in/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/in/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/in/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/in/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/in/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/in/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/in/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/in/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/in/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- Argentina (ar) -->
+  <url><loc>https://b2bcasestudy.github.io/ar/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ar/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ar/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ar/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ar/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ar/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ar/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ar/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ar/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- Chile (cl) -->
+  <url><loc>https://b2bcasestudy.github.io/cl/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/cl/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/cl/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/cl/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/cl/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/cl/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/cl/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/cl/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/cl/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- Colombia (co) -->
+  <url><loc>https://b2bcasestudy.github.io/co/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/co/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/co/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/co/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/co/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/co/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/co/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/co/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/co/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- Irlanda (ie) -->
+  <url><loc>https://b2bcasestudy.github.io/ie/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ie/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ie/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ie/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ie/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ie/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ie/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ie/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/ie/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- Italia (it) -->
+  <url><loc>https://b2bcasestudy.github.io/it/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/it/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/it/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/it/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/it/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/it/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/it/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/it/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/it/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
+
+  <!-- Países Bajos (nl) -->
+  <url><loc>https://b2bcasestudy.github.io/nl/</loc><priority>0.8</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/nl/industry/saas/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/nl/industry/saas/northwind-sales-cycle/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/nl/industry/saas/cloudscale-churn-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/nl/industry/saas/devpulse-arr-growth/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/nl/industry/fintech/</loc><priority>0.7</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/nl/industry/fintech/payflow-compliance-speed/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/nl/industry/fintech/ledgerx-fraud-reduction/</loc><priority>0.6</priority></url>
+  <url><loc>https://b2bcasestudy.github.io/nl/industry/fintech/bankingapi-open-banking/</loc><priority>0.6</priority></url>
 
 </urlset>
