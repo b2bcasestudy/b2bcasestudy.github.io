@@ -12,14 +12,17 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased">
 
+  <!-- HEADER UNIVERSAL -->
   <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <a href="/en-us/" class="text-xs text-slate-400 hover:text-emerald-400 transition">← Back to US Home</a>
-        <span class="text-slate-700">|</span>
-        <span class="font-semibold text-lg tracking-tight text-white">SaaS Case Studies</span>
+      <div class="flex items-center gap-2">
+        <span class="bg-emerald-500 text-slate-950 font-bold w-7 h-7 flex items-center justify-center rounded">C</span>
+        <a href="/en-us/" class="font-semibold text-lg tracking-tight text-white hover:text-emerald-400 transition">B2B Case Studies</a>
       </div>
-      <a href="#contact" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition">Get a SaaS Case Study</a>
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+        <a href="/en-us/" class="hover:text-white transition">← Back to US Home</a>
+      </nav>
+      <a href="/en-us/#contact" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition">Request a Quote</a>
     </div>
   </header>
 
@@ -39,16 +42,6 @@
           <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Sales Efficiency</span>
           <h2 class="text-xl font-bold text-white mt-4 mb-3">Northwind Analytics</h2>
           <p class="text-slate-400 text-sm mb-6">How Northwind reduced its enterprise deal cycle by 27 days using interview-led proof points.</p>
-          <div class="grid grid-cols-2 gap-2 mb-6">
-            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 text-center">
-              <div class="text-xl font-bold text-emerald-400">-27 Days</div>
-              <div class="text-[10px] text-slate-400">Sales Cycle</div>
-            </div>
-            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 text-center">
-              <div class="text-xl font-bold text-emerald-400">+38%</div>
-              <div class="text-[10px] text-slate-400">Close Rate</div>
-            </div>
-          </div>
         </div>
         <a href="/en-us/industry/saas/northwind-sales-cycle/" class="block text-center bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white font-semibold py-2.5 rounded-lg text-sm transition">Read Full Case Study →</a>
       </div>
@@ -59,16 +52,6 @@
           <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Customer Retention</span>
           <h2 class="text-xl font-bold text-white mt-4 mb-3">CloudScale Infrastructure</h2>
           <p class="text-slate-400 text-sm mb-6">How CloudScale cut customer churn by 42% by highlighting verified migration outcomes.</p>
-          <div class="grid grid-cols-2 gap-2 mb-6">
-            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 text-center">
-              <div class="text-xl font-bold text-emerald-400">-42%</div>
-              <div class="text-[10px] text-slate-400">Churn Rate</div>
-            </div>
-            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 text-center">
-              <div class="text-xl font-bold text-emerald-400">118%</div>
-              <div class="text-[10px] text-slate-400">Net Retention</div>
-            </div>
-          </div>
         </div>
         <a href="/en-us/industry/saas/cloudscale-churn-reduction/" class="block text-center bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white font-semibold py-2.5 rounded-lg text-sm transition">Read Full Case Study →</a>
       </div>
@@ -79,25 +62,16 @@
           <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">ARR Expansion</span>
           <h2 class="text-xl font-bold text-white mt-4 mb-3">DevPulse Platform</h2>
           <p class="text-slate-400 text-sm mb-6">How DevPulse expanded ARR from $2M to $8M by targeting technical buyer pain points.</p>
-          <div class="grid grid-cols-2 gap-2 mb-6">
-            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 text-center">
-              <div class="text-xl font-bold text-emerald-400">4x ARR</div>
-              <div class="text-[10px] text-slate-400">Growth</div>
-            </div>
-            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 text-center">
-              <div class="text-xl font-bold text-emerald-400">+$14K</div>
-              <div class="text-[10px] text-slate-400">Average ACV</div>
-            </div>
-          </div>
         </div>
         <a href="/en-us/industry/saas/devpulse-arr-growth/" class="block text-center bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-white font-semibold py-2.5 rounded-lg text-sm transition">Read Full Case Study →</a>
       </div>
-
+    </div>
+    
+    <!-- CTA Final del Hub -->
+    <div class="text-center bg-slate-900 border border-slate-800 rounded-2xl p-10">
+      <h3 class="text-2xl font-bold text-white mb-4">Want similar results for your SaaS?</h3>
+      <a href="/en-us/#contact" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-3 rounded-lg transition">Request a Custom Case Study Quote</a>
     </div>
   </main>
-
-  <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-    <p>© 2026 B2B Case Studies. All rights reserved.</p>
-  </footer>
 </body>
 </html>
