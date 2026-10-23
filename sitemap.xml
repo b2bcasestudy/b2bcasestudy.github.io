@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Portada Principal (Español Global) -->
   <url>
     <loc>https://b2bcasestudy.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
     <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
   </url>
+
+  <!-- Versión Estados Unidos -->
+  <url>
+    <loc>https://b2bcasestudy.github.io/en-us/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
+  </url>
+
+  <!-- Versión Reino Unido -->
+  <url>
+    <loc>https://b2bcasestudy.github.io/en-gb/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://b2bcasestudy.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://b2bcasestudy.github.io/en-us/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://b2bcasestudy.github.io/en-gb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://b2bcasestudy.github.io/en-us/"/>
+  </url>
+
 </urlset>
